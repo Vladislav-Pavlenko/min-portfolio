@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AM Studio</title>
+    <!-- Replace "AM Studio" with your first and last name -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="89" height="12" viewBox="0 0 89 12" fill="none"><path d="M1.92 11H0L4.784 0.28H7.216L12 11H10.048L8.816 8.216H3.152L1.92 11ZM5.296 3.4L3.84 6.664H8.128L6.672 3.4L6.048 1.88H5.92L5.296 3.4ZM14.528 11H12.8V0.28H15.152L18.24 6.488L19.216 8.712H19.344L20.288 6.488L23.344 0.28H25.696V11H23.968V4.424L24.032 2.872H23.904L23.248 4.424L20.288 10.36H18.208L15.248 4.424L14.592 2.872H14.464L14.528 4.424V11ZM34.5304 11.16C32.9624 11.16 31.7624 10.84 30.9304 10.2C30.109 9.54933 29.6984 8.648 29.6984 7.496V7.4H31.4264V7.656C31.4264 8.31733 31.6557 8.80267 32.1144 9.112C32.5837 9.42133 33.389 9.576 34.5304 9.576C35.533 9.576 36.2424 9.464 36.6584 9.24C37.085 9.00533 37.2984 8.632 37.2984 8.12C37.2984 7.672 37.1544 7.336 36.8664 7.112C36.589 6.888 36.0984 6.712 35.3944 6.584L32.7704 6.152C30.7117 5.78933 29.6824 4.81867 29.6824 3.24C29.6824 2.376 30.061 1.64 30.8184 1.032C31.5864 0.424 32.7437 0.12 34.2904 0.12C35.7944 0.12 36.9304 0.456 37.6984 1.128C38.4664 1.8 38.8504 2.68533 38.8504 3.784V3.88H37.1384V3.672C37.1384 3 36.909 2.504 36.4504 2.184C35.9917 1.864 35.2184 1.704 34.1304 1.704C33.1704 1.704 32.477 1.82133 32.0504 2.056C31.6237 2.29067 31.4104 2.65333 31.4104 3.144C31.4104 3.592 31.5437 3.92267 31.8104 4.136C32.0877 4.33867 32.557 4.50933 33.2184 4.648L35.8264 5.096C37.9597 5.48 39.0264 6.456 39.0264 8.024C39.0264 8.90933 38.6477 9.656 37.8904 10.264C37.1437 10.8613 36.0237 11.16 34.5304 11.16ZM45.5811 11H43.8691V1.832H39.6451V0.28H49.7891V1.832H45.5811V11ZM59.472 9.96C58.5973 10.76 57.36 11.16 55.76 11.16C54.16 11.16 52.9227 10.76 52.048 9.96C51.1733 9.14933 50.736 8.01333 50.736 6.552V0.28H52.448V6.44C52.448 7.51733 52.704 8.296 53.216 8.776C53.7387 9.256 54.5867 9.496 55.76 9.496C56.9333 9.496 57.776 9.256 58.288 8.776C58.8107 8.296 59.072 7.51733 59.072 6.44V0.28H60.8V6.552C60.8 8.01333 60.3573 9.14933 59.472 9.96ZM67.3073 11H62.4273V0.28H67.3073C68.9713 0.28 70.2886 0.76 71.2593 1.72C72.2406 2.68 72.7313 3.98667 72.7313 5.64C72.7313 7.29333 72.2406 8.6 71.2593 9.56C70.2886 10.52 68.9713 11 67.3073 11ZM67.3073 1.832H64.1393V9.448H67.3073C68.5659 9.448 69.4779 9.15467 70.0433 8.568C70.6193 7.97067 70.9073 6.99467 70.9073 5.64C70.9073 4.28533 70.6193 3.31467 70.0433 2.728C69.4779 2.13067 68.5659 1.832 67.3073 1.832ZM75.7468 11H74.0188V0.28H75.7468V11ZM82.6109 11.16C80.9255 11.16 79.5709 10.6587 78.5469 9.656C77.5335 8.64267 77.0269 7.304 77.0269 5.64C77.0269 3.976 77.5335 2.64267 78.5469 1.64C79.5709 0.626666 80.9255 0.12 82.6109 0.12C84.3069 0.12 85.6615 0.621333 86.6749 1.624C87.6989 2.62667 88.2109 3.96533 88.2109 5.64C88.2109 7.31467 87.6989 8.65333 86.6749 9.656C85.6615 10.6587 84.3069 11.16 82.6109 11.16ZM79.7629 8.568C80.3815 9.18667 81.3309 9.496 82.6109 9.496C83.8909 9.496 84.8402 9.18667 85.4589 8.568C86.0775 7.93867 86.3869 6.96267 86.3869 5.64C86.3869 4.30667 86.0775 3.33067 85.4589 2.712C84.8402 2.08267 83.8909 1.768 82.6109 1.768C81.3309 1.768 80.3815 2.08267 79.7629 2.712C79.1549 3.33067 78.8509 4.30667 78.8509 5.64C78.8509 6.97333 79.1549 7.94933 79.7629 8.568Z" fill="black"/></svg>'
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        margin: 0;
+      }
+
+      ul,
+      ol {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      a {
+        display: block;
+        color: currentColor;
+        text-decoration: none;
+      }
+
+      button {
+        padding: 0;
+        border: none;
+        font: inherit;
+        color: inherit;
+        background-color: transparent;
+        cursor: pointer;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Reset */
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "League Spartan", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #000;
+        line-height: normal;
+      }
+
+      main {
+        padding: 0 20px;
+      }
+
+      /* Global */
+      .header {
+        padding: 20px;
+      }
+
+      .header-nav {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .header-nav-logo {
+        font-size: 18px;
+        font-weight: 500;
+        z-index: 110;
+      }
+
+      .header-nav-list {
+        display: none;
+      }
+
+      .header-nav-btn {
+        display: flex;
+        align-items: center;
+        z-index: 110;
+      }
+
+      .header-menu {
+        z-index: 100;
+        position: absolute;
+        top: -100%;
+        right: -100%;
+        background-color: #fff;
+        display: none;
+        width: 0%;
+        height: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 1250ms ease;
+      }
+
+      .header-menu > ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .header-menu a {
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      .active {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .hero {
+        padding: 50px 0;
+      }
+
+      .hero-title-container {
+        margin-bottom: 75px;
+      }
+
+      .hero-title {
+        font-size: 96px;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+
+      .hero-title > span {
+        font-size: 72px;
+        font-weight: 400;
+      }
+
+      .hero-position {
+        font-size: 22px;
+        font-weight: 400;
+      }
+
+      .hero-description {
+        font-size: 44px;
+        font-weight: 300;
+        margin-bottom: 20px;
+      }
+
+      .hero-connect {
+        position: relative;
+        display: inline-flex;
+        color: #828282;
+        font-weight: 500;
+        margin-bottom: 29px;
+      }
+
+      .hero-connect::after {
+        position: absolute;
+        content: "";
+        bottom: -14px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #828282;
+      }
+
+      .hero-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 28px;
+      }
+
+      .hero-list a {
+        font-weight: 500;
+        transition: all 300ms ease-in-out;
+      }
+
+      .hero-list a:hover,
+      .hero-list a:focus-visible {
+        color: #8f8f8f;
+      }
+
+      .hero-list a:active {
+        color: #6c6c6c;
+      }
+
+      .hero-btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 23px;
+        border-radius: 322px;
+        background: #000;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 400;
+        width: 196px;
+        height: 47px;
+        transition: all 300ms ease-in-out;
+      }
+
+      .hero-btn:hover,
+      .hero-btn:focus-visible {
+        background-color: #8f8f8f;
+      }
+
+      .hero-btn:active {
+        background-color: #6c6c6c;
+      }
+
+      .hero-btn > div {
+        background-color: #fff;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+      }
+
+      .about {
+        padding: 50px 0;
+      }
+
+      .about-title {
+        font-size: 44px;
+        font-weight: 500;
+        margin-bottom: 28px;
+      }
+
+      .about-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .about-list > li {
+        border-left: 1px solid #d2d1d1;
+        padding: 10px 0px 10px 30px;
+      }
+
+      .about-list h3 {
+        color: #828282;
+        font-size: 44px;
+        font-weight: 500;
+        margin-bottom: 40px;
+      }
+
+      .about-list h4 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+
+      .about-list p {
+        font-size: 20px;
+        font-weight: 300;
+      }
+
+      .work {
+        padding: 50px 0;
+      }
+
+      .work-title {
+        font-size: 44px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+
+      .work-title > span {
+        font-size: 16px;
+      }
+
+      .work-description {
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+      .work-title-container {
+        margin-bottom: 60px;
+      }
+
+      .work-list {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+      }
+
+      .work-list > li {
+        position: relative;
+        display: flex;
+      }
+
+      .work-list > li::after {
+        position: absolute;
+        content: "";
+        top: -30px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #828282;
+      }
+
+      .work-list div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .work-list h3 {
+        font-size: 44px;
+        font-weight: 500;
+      }
+
+      .work-list h4 {
+        font-size: 34px;
+        font-weight: 500;
+      }
+
+      .process {
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .process-title {
+        font-size: 44px;
+        font-weight: 500;
+        margin-bottom: 30px;
+      }
+
+      .process-description {
+        font-size: 24px;
+        font-weight: 300;
+      }
+
+      .process-list {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 20px;
+      }
+
+      .process-list > li {
+        position: relative;
+        padding: 20px;
+      }
+
+      .process-list > li::after {
+        position: absolute;
+        content: "";
+        bottom: -20px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #828282;
+      }
+
+      .process-list div {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+      }
+
+      .process-list h4 {
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      .process-list p {
+        font-size: 16px;
+        font-weight: 300;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        position: static;
+        transition: max-height 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+          opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+          margin 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .process-list div svg {
+        transition: all 600ms ease-in-out;
+      }
+
+      .process-list .rotate {
+        transform: rotate(225deg);
+      }
+
+      .process-list p.open {
+        opacity: 1;
+        max-height: 500px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .contact {
+        padding: 50px 0;
+      }
+
+      .contact-title {
+        font-size: 44px;
+        font-weight: 500;
+        margin-bottom: 30px;
+      }
+
+      .contact-link {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 23px;
+        border-radius: 322px;
+        background-color: #000;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 400;
+        width: 196px;
+        height: 47px;
+        transition: all 300ms ease-in-out;
+      }
+
+      .contact-link:hover,
+      .contact-link:focus-visible {
+        background-color: #8f8f8f;
+      }
+
+      .footer a:active {
+        background-color: #6c6c6c;
+      }
+
+      .contact-link > div {
+        background-color: #fff;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+      }
+
+      .footer {
+        padding: 32px;
+      }
+
+      .footer-copyright {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 30px;
+      }
+
+      .footer-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 0 52px;
+        justify-content: center;
+      }
+
+      .footer-list a {
+        font-weight: 500;
+        transition: all 300ms ease-in-out;
+      }
+
+      .footer a:hover,
+      .footer a:focus-visible {
+        color: #8f8f8f;
+      }
+      .footer a:active {
+        color: #6c6c6c;
+      }
+
+      @media screen and (max-width: 325px) {
+        .footer-list {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        main {
+          padding: 0 32px;
+        }
+
+        .header-nav-btn {
+          display: none;
+        }
+
+        .header-nav-list {
+          display: flex;
+          gap: 23px;
+        }
+
+        .hero {
+          padding: 186px 0 96px;
+        }
+
+        .hero-title {
+          font-size: 182px;
+        }
+
+        .hero-title > span {
+          font-size: 150px;
+        }
+
+        .hero-position {
+          max-width: 322px;
+        }
+
+        .hero-description {
+          max-width: 452px;
+        }
+
+        .hero-description-container {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .about-list p {
+          max-width: 361px;
+        }
+
+        .about {
+          padding: 96px 0;
+        }
+
+        .work {
+          padding: 96px 0;
+        }
+
+        .process {
+          padding: 96px 0;
+        }
+
+        .contact {
+          padding: 96px 0;
+        }
+
+        .contact-title {
+          font-size: 78px;
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        .hero-title-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+        }
+
+        .hero-title > span {
+          font-size: 182px;
+        }
+
+        .hero-position {
+          font-size: 24px;
+          font-weight: 500;
+          margin-bottom: 75px;
+        }
+
+        .hero-description {
+          max-width: 906px;
+        }
+
+        .about-list {
+          flex-direction: row;
+        }
+
+        .work-title-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .work-list h3 {
+          font-size: 96px;
+        }
+
+        .work-list p {
+          font-size: 24px;
+        }
+
+        .process {
+          flex-direction: row;
+          gap: 122px;
+        }
+
+        .process-list p {
+          font-size: 18px;
+        }
+
+        .contact {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+        }
+
+        .contact-title {
+          font-size: 96px;
+          max-width: 912px;
+        }
+
+        .footer {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .footer-copyright {
+          margin: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header-nav">
+        <a class="header-nav-logo" href="./">AM Studio</a>
+        <!-- Replace "AM Studio" with your first and last name -->
+        <ul class="header-nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="header-nav-btn" type="button" id="menuBtnJs">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="16"
+            viewBox="0 0 18 16"
+            fill="none"
+          >
+            <path
+              d="M0 0H18V2H0V0ZM0 7H18V9H0V7ZM0 14H18V16H0V14Z"
+              fill="black"
+            />
+          </svg>
+        </button>
+      </nav>
+      <div class="header-menu" id="menuJs">
+        <ul class="header-menu-list">
+          <li><a id="menuItemJs" href="#about">About</a></li>
+          <li><a id="menuItemJs" href="#work">Work</a></li>
+          <li><a id="menuItemJs" href="#process">Process</a></li>
+          <li><a id="menuItemJs" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-title-container">
+          <h1 class="hero-title">
+            Digital <br />
+            <span>Designer</span>
+          </h1>
+          <!-- Replace "Digital Designer" with your first and last name -->
+          <p class="hero-position">
+            specialized in Web Design, UX / UI, Framer, and Front End
+            Development.
+          </p>
+          <!-- Replace in your position -->
+        </div>
+
+        <div class="hero-description-container">
+          <h3 class="hero-description">
+            I'm helping startups and business owners to make a visual statement
+            through spotless Web Design and Development so they can increase
+            brand awareness and sell more.
+          </h3>
+          <!-- Replace with a story about yourself  -->
+          <div>
+            <p class="hero-connect">Let's get connected</p>
+            <ul class="hero-list">
+              <li><a href="https://exemple.url">Dribbble</a></li>
+              <li><a href="https://exemple.url">Behance</a></li>
+              <li><a href="https://exemple.url">Linkedin</a></li>
+              <li><a href="https://exemple.url">Instagram</a></li>
+            </ul>
+            <!-- Replace "https://exemple.url" with the url that leads to your social networks. 
+             You can also change the name of social networks or add more -->
+          </div>
+        </div>
+        <a href="https://exemple.url" class="hero-btn">
+          <!-- Replace "https://exemple.url" with your social media handle, 
+           email address, phone number, or other means of contacting you. 
+           Note: For emails, use the prefix "mailto:"" for example, "mailto: youremail@gmail.com", 
+           for phone numbers, use the prefix "tel:" for example, "tel:+38000000000", 
+           note that the phone number should not contain spaces and should contain + and the telephone code of your country,
+          for example, "+38". -->
+          Drop me line
+          <div></div>
+          <!-- For developer: this div is point -->
+        </a>
+      </section>
+      <section id="about" class="about">
+        <h2 class="about-title">I can help you with ...</h2>
+        <ul class="about-list">
+          <li>
+            <h3>01</h3>
+            <h4>Design</h4>
+            <p>
+              I make web designs that engage your audience and create the user
+              experience you want.
+            </p>
+          </li>
+          <li>
+            <h3>02</h3>
+            <h4>Development</h4>
+            <p>
+              Bringing visuals to life through developing highly functional web
+              solutions.
+            </p>
+          </li>
+          <li>
+            <h3>03</h3>
+            <h4>The Full Package</h4>
+            <p>
+              Get the best of both worlds for your website, capture your brand
+              identity and get fully functional features.
+            </p>
+          </li>
+        </ul>
+        <!-- In this list, you need to replace the skills in the <h4> heading with your own,
+        and in <p> add a brief description of what task this skill solves, <h3> DOES NOT NEED to be changed. 
+        You can also add more skills and in this case continue numbering in <h3>. -->
+      </section>
+      <section id="work" class="work">
+        <div class="work-title-container">
+          <h2 class="work-title">Selected Work<span>(4)</span></h2>
+          <p class="work-description">A piece from my selection of favorites</p>
+        </div>
+        <ul class="work-list">
+          <li>
+            <div>
+              <h3>Braver</h3>
+              <p>Web Design, UX / UI, Framer Development</p>
+            </div>
+            <h4>/01</h4>
+          </li>
+          <li>
+            <div>
+              <h3>Rebo</h3>
+              <p>UX / UI, Framer Development</p>
+            </div>
+            <h4>/02</h4>
+          </li>
+          <li>
+            <div>
+              <h3>Galleh</h3>
+              <p>Web Design, Framer Development</p>
+            </div>
+            <h4>/03</h4>
+          </li>
+          <li>
+            <div>
+              <h3>Caku</h3>
+              <p>Framer Development</p>
+            </div>
+            <h4>/04</h4>
+          </li>
+        </ul>
+        <!-- In this list, you need to replace the name of the company in the 
+        <h3> header with the one where you worked or are working, and add a 
+        position in this company in <p>, <h4> does not need to be changed. 
+        You can also add more companies and in this case continue the numbering in <h4>. -->
+      </section>
+      <section id="process" class="process">
+        <div class="process-title-container">
+          <h2 class="process-title">My way of getting things done</h2>
+          <p class="process-description">
+            Fast and transparent, the path to owning a website that will
+            represent your brand in the best of light is only 4 weeks away.
+            Standing by the Waterfall methodology, I assure a step by step
+            completion of the whole process.
+          </p>
+        </div>
+        <ul class="process-list">
+          <li>
+            <div>
+              <h4>01</h4>
+              <h4>UX / Wireframing</h4>
+              <button type="button" class="accordion-btn">
+                <svg
+                  class="accordion-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"
+                    fill="black"
+                  />
+                </svg>
+              </button>
+            </div>
+            <p class="accordion-content">
+              Here we map out the elements clearly, so you can see what elements
+              will be built into the end-product, and have a better idea of the
+              intended behavior end-users will have while using it.
+            </p>
+          </li>
+          <li>
+            <div>
+              <h4>02</h4>
+              <h4>Web Design</h4>
+              <button type="button" class="accordion-btn">
+                <svg
+                  class="accordion-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"
+                    fill="black"
+                  />
+                </svg>
+              </button>
+            </div>
+            <p class="accordion-content">
+              Here we map out the elements clearly, so you can see what elements
+              will be built into the end-product, and have a better idea of the
+              intended behavior end-users will have while using it.
+            </p>
+          </li>
+          <li>
+            <div>
+              <h4>03</h4>
+              <h4>Web Development</h4>
+              <button type="button" class="accordion-btn">
+                <svg
+                  class="accordion-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"
+                    fill="black"
+                  />
+                </svg>
+              </button>
+            </div>
+            <p class="accordion-content">
+              Here we map out the elements clearly, so you can see what elements
+              will be built into the end-product, and have a better idea of the
+              intended behavior end-users will have while using it.
+            </p>
+          </li>
+          <li>
+            <div>
+              <h4>04</h4>
+              <h4>Analytics Setup / Support</h4>
+              <button type="button" class="accordion-btn">
+                <svg
+                  class="accordion-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"
+                    fill="black"
+                  />
+                </svg>
+              </button>
+            </div>
+            <p class="accordion-content">
+              Here we map out the elements clearly, so you can see what elements
+              will be built into the end-product, and have a better idea of the
+              intended behavior end-users will have while using it.
+            </p>
+          </li>
+        </ul>
+        <!-- In this list, you can describe the path to creating a new customer product,
+        or you can change the title and description before the list and indicate your advantages in the market.
+        You will also need to change the name in the menu item -->
+      </section>
+      <section id="contact" class="contact">
+        <h2 class="contact-title">
+          Let`s talk about a project, collaboration or an idea you may have
+        </h2>
+        <a href="https://exemple.url" class="contact-link">
+          <!-- Replace "https://exemple.url" with your social media handle, 
+           email address, phone number, or other means of contacting you. 
+           Note: For emails, use the prefix "mailto:"" for example, "mailto: youremail@gmail.com", 
+           for phone numbers, use the prefix "tel:" for example, "tel:+38000000000", 
+           note that the phone number should not contain spaces and should contain + and the telephone code of your country,
+          for example, "+38". -->
+          Drop me line
+          <div></div>
+          <!-- For developer: this div is point -->
+        </a>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer-copyright">
+        &copy; 2024 | All Rights Reserved. Design & Coded with ❤️️
+      </p>
+      <ul class="footer-list">
+        <li><a href="https://exemple.url">Dribbble</a></li>
+        <li><a href="https://exemple.url">Behance</a></li>
+        <li><a href="https://exemple.url">Linkedin</a></li>
+        <li><a href="https://exemple.url">Instagram</a></li>
+      </ul>
+      <!-- Replace "https://exemple.url" with the url that leads to your social networks. 
+      You can also change the name of social networks or add more -->
+    </footer>
+    <script>
+      const menuEl = document.querySelector("#menuJs");
+      const menuBtnEl = document.querySelector("#menuBtnJs");
+      const menuItemsEl = document.querySelectorAll("#menuItemJs");
+
+      menuBtnEl.addEventListener("click", () => {
+        if (!menuEl.classList.contains("active")) {
+          menuEl.classList.add("active");
+          document.body.style.overflow = "hidden";
+        } else {
+          menuEl.classList.remove("active");
+          document.body.style.overflow = "auto";
+        }
+      });
+
+      menuItemsEl.forEach((item) => {
+        item.addEventListener("click", () => {
+          menuEl.classList.remove("active");
+          document.body.style.overflow = "auto";
+        });
+      });
+    </script>
+    <script>
+      const accordionBtns = document.querySelectorAll(".accordion-btn");
+      const accordionContents = document.querySelectorAll(".accordion-content");
+      const accordionIcons = document.querySelectorAll(".accordion-icon");
+
+      accordionBtns.forEach((btn, idx) => {
+        btn.addEventListener("click", function () {
+          accordionContents.forEach((content, cidx) => {
+            if (idx === cidx) {
+              content.classList.toggle("open");
+            }
+          });
+          accordionIcons.forEach((content, cidx) => {
+            if (idx === cidx) {
+              content.classList.toggle("rotate");
+            }
+          });
+        });
+      });
+    </script>
+    <!-- Hi, I'm Vladislav and this is my Minimalist Portfolio landing page. 
+    The essence of this project is to put the entire landing page in one index.html 
+    so that a person with minimal HTML knowledge can quickly fill out and use this portfolio. 
+    This approach is not correct because it is difficult to analyze and maintain, but 
+    I tried to make it clearer with the help of comments. So if you need to quickly create
+    a portfolio with a minimalist design (by Asril Mochammad [https://www.figma.com/@asril_mochammad]), 
+    this landing page is for you :) Thank you  -->
+  </body>
+</html>
